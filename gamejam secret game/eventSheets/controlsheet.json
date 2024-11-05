@@ -1,0 +1,32 @@
+{
+	"name": "controlsheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 998709990375093,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 244647158803046,
+					"parameters": {
+						"layout": "home"
+					}
+				}
+			],
+			"sid": 893696868380601
+		}
+	],
+	"sid": 677283732202893
+}

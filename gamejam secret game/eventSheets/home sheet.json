@@ -1,0 +1,58 @@
+{
+	"name": "home sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 636507647961246,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "playBotton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 694960752246409,
+					"parameters": {
+						"layout": "lv1"
+					}
+				}
+			],
+			"sid": 624175553805422
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 962956858190361,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "controls"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 803390225362172,
+					"parameters": {
+						"layout": "controls"
+					}
+				}
+			],
+			"sid": 957356324894519
+		}
+	],
+	"sid": 830352806196338
+}
