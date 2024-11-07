@@ -107,7 +107,7 @@
 					"type": "Sprite",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Stand Right",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -158,12 +158,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 162.8653846153846,
-						"y": 385.5992939099735,
+						"x": 32,
+						"y": 182,
 						"width": 58.282051282051285,
 						"height": 92.11650485436894,
-						"originX": 1.9423076923076923,
-						"originY": 2.541924095322153,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
