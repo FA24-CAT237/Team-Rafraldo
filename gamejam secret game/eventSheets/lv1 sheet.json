@@ -1,5 +1,81 @@
 {
 	"name": "lv1 sheet",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 979457061951677,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 130886536559855,
+					"parameters": {
+						"animation": "\"Left Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 958997018402418
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 606985512618005,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 530486343060562,
+					"parameters": {
+						"animation": "\"Walk Right\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 427306067821960
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 282877900711995,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 530696896947706,
+					"parameters": {
+						"animation": "\"Jump Left\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 460118399312650
+		}
+	],
 	"sid": 261414330425526
 }
