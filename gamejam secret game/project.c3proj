@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
@@ -119,7 +126,12 @@
 			"hearts3",
 			"hearts4",
 			"hearts5",
-			"Sprite2"
+			"boarder",
+			"rightStairs",
+			"deathSpikes",
+			"leftStairs",
+			"sandBlock",
+			"tracker"
 		],
 		"subfolders": [
 			{
@@ -162,7 +174,7 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"spidersfam"
+			"solids"
 		],
 		"subfolders": []
 	},

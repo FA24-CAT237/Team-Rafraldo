@@ -1,10 +1,16 @@
 {
-	"name": "Sprite2",
+	"name": "boarder",
 	"plugin-id": "Sprite",
 	"sid": 908081826153978,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 947112944972242
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

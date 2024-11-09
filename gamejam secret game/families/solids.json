@@ -1,0 +1,19 @@
+{
+	"name": "solids",
+	"plugin-id": "Sprite",
+	"sid": 477950342630208,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 718326071458264
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"rightStairs",
+		"leftStairs",
+		"sandBlock"
+	]
+}

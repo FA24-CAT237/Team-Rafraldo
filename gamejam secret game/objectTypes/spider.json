@@ -59,8 +59,8 @@
 						"imagePoints": [
 							{
 								"name": "Image Point 1",
-								"x": 0.5,
-								"y": 0
+								"x": 0.125,
+								"y": 0.4166666666666667
 							}
 						],
 						"duration": 1,

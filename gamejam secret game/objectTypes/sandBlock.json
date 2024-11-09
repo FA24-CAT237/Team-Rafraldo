@@ -1,0 +1,51 @@
+{
+	"name": "sandBlock",
+	"plugin-id": "Sprite",
+	"sid": 486228245630713,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 20,
+						"height": 13,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6014375,
+						"collisionPoly": {
+							"points": [
+								0.05,
+								0.07692307692307693,
+								0.95,
+								0.07692307692307693,
+								0.95,
+								0.9230769230769231,
+								0.05,
+								0.9230769230769231
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 423311819201459,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

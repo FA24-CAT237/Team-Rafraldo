@@ -454,10 +454,40 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-at-offset",
-							"objectClass": "spider",
-							"sid": 886252867166679,
+							"objectClass": "tracker",
+							"sid": 180199837847840,
 							"parameters": {
-								"object": "Sprite2",
+								"object": "boarder",
+								"offset-x": "1",
+								"offset-y": "0"
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "tracker",
+							"sid": 252502542192772,
+							"parameters": {
+								"object": "sandBlock",
+								"offset-x": "1",
+								"offset-y": "0"
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "tracker",
+							"sid": 349599561190920,
+							"parameters": {
+								"object": "leftStairs",
+								"offset-x": "1",
+								"offset-y": "0"
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "tracker",
+							"sid": 176852637793675,
+							"parameters": {
+								"object": "spider",
 								"offset-x": "1",
 								"offset-y": "0"
 							}
@@ -465,19 +495,154 @@
 					],
 					"actions": [
 						{
-							"id": "set-boolean-instvar",
+							"id": "toggle-boolean-instvar",
 							"objectClass": "spider",
-							"sid": 545921069522478,
+							"sid": 695166535748943,
 							"parameters": {
-								"instance-variable": "movingLeft",
-								"value": "false"
+								"instance-variable": "movingLeft"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "spider",
+							"sid": 589672567808215,
+							"parameters": {
+								"state": "flipped"
 							}
 						}
 					],
-					"sid": 471030706093672
+					"sid": 471030706093672,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "tracker",
+							"sid": 571280953664876,
+							"parameters": {
+								"object": "boarder",
+								"offset-x": "-1",
+								"offset-y": "0"
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "tracker",
+							"sid": 761148507124633,
+							"parameters": {
+								"object": "sandBlock",
+								"offset-x": "-1",
+								"offset-y": "0"
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "tracker",
+							"sid": 919699181397726,
+							"parameters": {
+								"object": "leftStairs",
+								"offset-x": "-1",
+								"offset-y": "0"
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "tracker",
+							"sid": 531777009349095,
+							"parameters": {
+								"object": "spider",
+								"offset-x": "-1",
+								"offset-y": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-instvar",
+							"objectClass": "spider",
+							"sid": 380818973234248,
+							"parameters": {
+								"instance-variable": "movingLeft"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "spider",
+							"sid": 587060476081756,
+							"parameters": {
+								"state": "flipped"
+							}
+						}
+					],
+					"sid": 969086371014233,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 527751159198052
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "tracker",
+							"sid": 608637437104242,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "spider",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 701063335310679
 				}
 			],
 			"sid": 291751783916752
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "death spikes",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 301936081879657,
+							"parameters": {
+								"object": "deathSpikes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "player",
+							"sid": 327518017209263,
+							"parameters": {
+								"instance-variable": "lifes",
+								"value": "100"
+							}
+						}
+					],
+					"sid": 813896910712152
+				}
+			],
+			"sid": 324697662720346
 		}
 	],
 	"sid": 261414330425526
