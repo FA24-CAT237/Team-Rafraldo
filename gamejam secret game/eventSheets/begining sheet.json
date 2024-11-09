@@ -1,0 +1,291 @@
+{
+	"name": "begining sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 476759549119092
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 484350358675986,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 392673944219313,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 276590752862154
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "dialog code",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "dialog begining",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "t",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 256841274427671
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "beginingDialog",
+							"sid": 840608926000133
+						},
+						{
+							"id": "destroy",
+							"objectClass": "9patch",
+							"sid": 639808177276693
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 701292734417237,
+							"parameters": {
+								"object-to-create": "9patch",
+								"layer": "\"hud\"",
+								"x": "437",
+								"y": "305",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 689527729432989,
+							"parameters": {
+								"object-to-create": "beginingDialog",
+								"layer": "\"hud\"",
+								"x": "440",
+								"y": "305",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "beginingDialog",
+							"sid": 306420132541246,
+							"parameters": {
+								"text": "t",
+								"duration": "2"
+							}
+						}
+					],
+					"sid": 783531682551711
+				},
+				{
+					"functionName": "destroy dialog",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "beginingDialog",
+							"sid": 898916674895713
+						},
+						{
+							"id": "destroy",
+							"objectClass": "9patch",
+							"sid": 498394175672079
+						}
+					],
+					"sid": 620021056780324
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 234786946814693,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						},
+						{
+							"id": "is-running-typewriter-text",
+							"objectClass": "beginingDialog",
+							"sid": 917278982308373
+						}
+					],
+					"actions": [
+						{
+							"id": "typewriter-finish",
+							"objectClass": "beginingDialog",
+							"sid": 902105567444350
+						}
+					],
+					"sid": 621468479259813
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 533240037843960,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						},
+						{
+							"id": "is-running-typewriter-text",
+							"objectClass": "beginingDialog",
+							"sid": 752006917119128,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "signal",
+							"objectClass": "System",
+							"sid": 652946731478096,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						}
+					],
+					"sid": 758252148272938
+				}
+			],
+			"sid": 796973026760691
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "dialog",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 330169283710496
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "dialog begining",
+							"sid": 834932295423942,
+							"parameters": [
+								"\"Nearly there\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 446025032745520,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialog begining",
+							"sid": 849416814730012,
+							"parameters": [
+								"\"Soon my baby will be alive\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 270406264137982,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialog begining",
+							"sid": 193844437546233,
+							"parameters": [
+								"\"Now we just have to get one last thing\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 498606135554662,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "dialog begining",
+							"sid": 663066421002038,
+							"parameters": [
+								"\"SOMEONE GET THE CHOPPER READY!\""
+							]
+						},
+						{
+							"id": "wait-for-signal",
+							"objectClass": "System",
+							"sid": 346618670378605,
+							"parameters": {
+								"tag": "\"next\""
+							}
+						},
+						{
+							"callFunction": "destroy dialog",
+							"sid": 927788541196829
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 401742246667125,
+							"parameters": {
+								"layout": "chopper"
+							}
+						}
+					],
+					"sid": 884769439117957
+				}
+			],
+			"sid": 226125049450836
+		}
+	],
+	"sid": 844215705678850
+}

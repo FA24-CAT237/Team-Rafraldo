@@ -2,79 +2,482 @@
 	"name": "lv1 sheet",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "movement",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 979457061951677,
-					"parameters": {
-						"key": 39
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 429903595392975,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 759821176156806,
+							"parameters": {
+								"animation": "\"Left Walk\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 353611078163405
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 566492983788133,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 298355463870430,
+							"parameters": {
+								"animation": "\"Walk Right\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 298351283254334
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 556883449921307,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 575624841896989,
+							"parameters": {
+								"animation": "\"Jump Left\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 306906659440550
 				}
 			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Sprite",
-					"sid": 130886536559855,
-					"parameters": {
-						"animation": "\"Left Walk\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 958997018402418
+			"sid": 668192822809798
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "life",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 606985512618005,
-					"parameters": {
-						"key": 37
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "player",
+							"sid": 132859806546564,
+							"parameters": {
+								"instance-variable": "lifes",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "player",
+							"sid": 626469412851695
+						}
+					],
+					"sid": 266632207594892
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "player",
+							"sid": 293359796360225
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 940161959148937,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 234526532418438
+						}
+					],
+					"sid": 832974190399432
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "hearts",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 406072197369403
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts",
+									"sid": 212639814334763,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts2",
+									"sid": 858072710129033,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts3",
+									"sid": 257386624809892,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts4",
+									"sid": 875156600675678,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts5",
+									"sid": 693049233890108,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 582636127571994
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "player",
+									"sid": 822139605767315,
+									"parameters": {
+										"instance-variable": "lifes",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts5",
+									"sid": 886484772681331,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 455210399848836
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "player",
+									"sid": 799487399349137,
+									"parameters": {
+										"instance-variable": "lifes",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts4",
+									"sid": 756679555653925,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 567365432490840
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "player",
+									"sid": 166760630230238,
+									"parameters": {
+										"instance-variable": "lifes",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts3",
+									"sid": 559643445526576,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 256610718727072
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "player",
+									"sid": 153038850545558,
+									"parameters": {
+										"instance-variable": "lifes",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts2",
+									"sid": 963335740354199,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 638594693039273
+						}
+					],
+					"sid": 336152021998089
 				}
 			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Sprite",
-					"sid": 530486343060562,
-					"parameters": {
-						"animation": "\"Walk Right\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 427306067821960
+			"sid": 248455062379715
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "spider",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 282877900711995,
-					"parameters": {
-						"key": 38
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "spider",
+							"sid": 294575728435310,
+							"parameters": {
+								"instance-variable": "movingLeft"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "spider",
+							"sid": 947967208644025,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 601705767316042
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "spider",
+							"sid": 624299088346656,
+							"parameters": {
+								"instance-variable": "movingLeft"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "spider",
+							"sid": 906223396803695,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 971542978382142
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "player",
+							"sid": 914151197779691,
+							"parameters": {
+								"object": "spider",
+								"offset-x": "0",
+								"offset-y": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "spider",
+							"sid": 390124357657838
+						}
+					],
+					"sid": 837789117183814
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 879917440687834,
+							"parameters": {
+								"object": "spider"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "player",
+							"sid": 686112223122143,
+							"parameters": {
+								"instance-variable": "lifes",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "spider",
+							"sid": 221080219725006
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "player",
+							"sid": 364469019419518,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Tint\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 583109564114369,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "player",
+							"sid": 416470424734761,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Tint\""
+							}
+						}
+					],
+					"sid": 754872239759943
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "spider",
+							"sid": 886252867166679,
+							"parameters": {
+								"object": "Sprite2",
+								"offset-x": "1",
+								"offset-y": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "spider",
+							"sid": 545921069522478,
+							"parameters": {
+								"instance-variable": "movingLeft",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 471030706093672
 				}
 			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Sprite",
-					"sid": 530696896947706,
-					"parameters": {
-						"animation": "\"Jump Left\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 460118399312650
+			"sid": 291751783916752
 		}
 	],
 	"sid": 261414330425526

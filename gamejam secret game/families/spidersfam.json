@@ -1,0 +1,12 @@
+{
+	"name": "spidersfam",
+	"plugin-id": "Sprite",
+	"sid": 998916987361817,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Sprite2",
+		"spider"
+	]
+}

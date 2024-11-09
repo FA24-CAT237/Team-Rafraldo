@@ -1,0 +1,62 @@
+{
+	"name": "chopper sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 694386422968653
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Sprite",
+					"sid": 326088435982177,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"take off\"",
+						"property": "position",
+						"end-x": "460",
+						"end-y": "109",
+						"time": "5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 631252798941228
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Sprite",
+					"sid": 533353865044238,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"take off\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 103692477871069,
+					"parameters": {
+						"layout": "outlook"
+					}
+				}
+			],
+			"sid": 890945479750943
+		}
+	],
+	"sid": 683785717797829
+}
