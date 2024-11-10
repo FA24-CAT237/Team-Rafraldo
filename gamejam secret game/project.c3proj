@@ -71,8 +71,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "bound",
-			"name": "Bound to layout",
+			"id": "destroy",
+			"name": "Destroy outside layout",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -121,7 +121,7 @@
 			"lighterSky",
 			"TiledBackground4",
 			"clouds",
-			"hearts",
+			"hearts1",
 			"hearts2",
 			"hearts3",
 			"hearts4",
@@ -131,7 +131,8 @@
 			"deathSpikes",
 			"leftStairs",
 			"sandBlock",
-			"tracker"
+			"tracker",
+			"door"
 		],
 		"subfolders": [
 			{
