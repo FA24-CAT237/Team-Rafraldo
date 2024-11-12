@@ -734,7 +734,16 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 800754747958337,
+							"parameters": {
+								"layout": "temple enter"
+							}
+						}
+					],
 					"sid": 410855949193599
 				}
 			],

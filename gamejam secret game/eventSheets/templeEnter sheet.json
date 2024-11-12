@@ -1,0 +1,441 @@
+{
+	"name": "templeEnter sheet",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "movement2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 852177614622478,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 766404682522348,
+							"parameters": {
+								"animation": "\"Left Walk\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 812174422520855
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 219199921138667,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 379702237749023,
+							"parameters": {
+								"animation": "\"Walk Right\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 468544397164674
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 130259294195649,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 858189284185487,
+							"parameters": {
+								"animation": "\"Jump Left\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 201619253708327
+				}
+			],
+			"sid": 433155402147051
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "life2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 892447429118612,
+							"parameters": {
+								"variable": "lifes",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "player",
+							"sid": 500242814490940
+						}
+					],
+					"sid": 565437949134546
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "player",
+							"sid": 725675251497503
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 317527751262677,
+							"parameters": {
+								"variable": "lifes",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 594408659185104,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 515993627450936
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 361932115658441,
+							"parameters": {
+								"variable": "lifes",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 502315948486510
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "hearts2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 732461624662604
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts1",
+									"sid": 253414192384888,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts2",
+									"sid": 639126601149258,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts3",
+									"sid": 625260241102392,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts4",
+									"sid": 484429505778878,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts5",
+									"sid": 475589811730432,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 518194350543206
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 424114883033632,
+									"parameters": {
+										"variable": "lifes",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts5",
+									"sid": 314829493534100,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 952008341402811
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 206557383484952,
+									"parameters": {
+										"variable": "lifes",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts5",
+									"sid": 118370695081584,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts4",
+									"sid": 552179947497668,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 727592990817631
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 935999451922880,
+									"parameters": {
+										"variable": "lifes",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts5",
+									"sid": 831031675765037,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts4",
+									"sid": 338144791025358,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts3",
+									"sid": 877613009460566,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 675455974591926
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 772154393608212,
+									"parameters": {
+										"variable": "lifes",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts5",
+									"sid": 634646879803303,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts4",
+									"sid": 635327716174888,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts3",
+									"sid": 253944995666024,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts2",
+									"sid": 874557975499064,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 336329547025470
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 741964465674527,
+									"parameters": {
+										"variable": "lifes",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts5",
+									"sid": 131256004516232,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts4",
+									"sid": 696313950297841,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts3",
+									"sid": 447317093472129,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts2",
+									"sid": 326962591796861,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "hearts1",
+									"sid": 464080728817856,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 249348355672635
+						}
+					],
+					"sid": 776599338240257
+				}
+			],
+			"sid": 123308336137165
+		}
+	],
+	"sid": 730391375077323
+}

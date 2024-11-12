@@ -285,6 +285,71 @@
 				}
 			],
 			"sid": 226125049450836
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "clicker",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 419064547970734,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Sprite3",
+							"sid": 527637964680545,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite3",
+							"sid": 817112618197325,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 122966409909747
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 690914591706974,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite3",
+							"sid": 460072969603729,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 781453016998822
+				}
+			],
+			"sid": 425182349809827
 		}
 	],
 	"sid": 844215705678850

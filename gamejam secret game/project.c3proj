@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 41400,
+	"savedWithRelease": 41500,
 	"name": "Game Jam Secret game",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -132,7 +132,11 @@
 			"leftStairs",
 			"sandBlock",
 			"tracker",
-			"door"
+			"door",
+			"TiledBackground5",
+			"Sprite2",
+			"TempleFloor",
+			"Sprite3"
 		],
 		"subfolders": [
 			{
@@ -186,7 +190,8 @@
 			"begining",
 			"lv1",
 			"chopper",
-			"outlook"
+			"outlook",
+			"temple enter"
 		],
 		"subfolders": []
 	},
@@ -197,7 +202,8 @@
 			"controlsheet",
 			"begining sheet",
 			"chopper sheet",
-			"outlook sheet"
+			"outlook sheet",
+			"templeEnter sheet"
 		],
 		"subfolders": []
 	},
