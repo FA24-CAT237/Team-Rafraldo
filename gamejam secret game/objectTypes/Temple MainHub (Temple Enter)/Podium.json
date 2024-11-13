@@ -1,0 +1,55 @@
+{
+	"name": "Podium",
+	"plugin-id": "Sprite",
+	"sid": 566637231470997,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 37,
+						"height": 18,
+						"originX": 0.5405405405405406,
+						"originY": 0.2777777777777778,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9459642,
+						"collisionPoly": {
+							"points": [
+								0.08108108108108109,
+								0.05555555555555555,
+								0.918918918918919,
+								0.05555555555555555,
+								0.972972972972973,
+								0.7222222222222222,
+								0.972972972972973,
+								0.9444444444444444,
+								0.02702702702702703,
+								0.9444444444444444,
+								0.02702702702702703,
+								0.7222222222222222
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 909361877263730,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -105,43 +105,53 @@
 			"player",
 			"artifact",
 			"Mouse",
-			"spider",
 			"Keyboard",
-			"labBg",
-			"AlienBabyLab",
-			"labCapsule",
 			"TiledBackground2",
-			"LabGarbageBin",
-			"CeilingLightLab",
 			"9patch",
 			"Sprite",
 			"helopad",
 			"PyramidStill",
 			"TiledBackground3",
-			"lighterSky",
 			"TiledBackground4",
-			"clouds",
 			"hearts1",
 			"hearts2",
 			"hearts3",
 			"hearts4",
 			"hearts5",
 			"boarder",
-			"rightStairs",
-			"deathSpikes",
-			"leftStairs",
-			"sandBlock",
 			"tracker",
 			"door",
 			"TiledBackground5",
 			"Sprite2",
-			"TempleFloor",
-			"Sprite3"
+			"Sprite3",
+			"VineRope",
+			"VineBarrier",
+			"Wisps",
+			"Torch",
+			"AlienPlant2",
+			"AlienPlant3",
+			"AlienPlant4",
+			"door2",
+			"Arrow",
+			"Sprite4",
+			"Sprite5",
+			"Sprite6",
+			"Sprite7",
+			"Sprite8",
+			"RubbleFalling"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"platform1"
+					"platform1",
+					"TallerTemplePlat",
+					"TempleFloor2",
+					"TempleFloor",
+					"sandBlock",
+					"rightStairs",
+					"leftStairs",
+					"TempleStairs",
+					"TempleStairs2"
 				],
 				"subfolders": [],
 				"name": "plats"
@@ -168,10 +178,56 @@
 			},
 			{
 				"items": [
-					"beginingDialog"
+					"beginingDialog",
+					"AlienBabyLab",
+					"CeilingLightLab",
+					"labBg",
+					"LabGarbageBin",
+					"labCapsule"
 				],
 				"subfolders": [],
 				"name": "game dialog"
+			},
+			{
+				"items": [
+					"clouds",
+					"lighterSky"
+				],
+				"subfolders": [],
+				"name": "Level 1"
+			},
+			{
+				"items": [
+					"Bomb_Beetle_Enemy",
+					"spider",
+					"deathSpikes",
+					"TrapDoor",
+					"TrapSpike",
+					"Boulder",
+					"Fireball",
+					"FireFaerie",
+					"Ghouls"
+				],
+				"subfolders": [],
+				"name": "Enemies"
+			},
+			{
+				"items": [
+					"Pillar1",
+					"AlienPlant1",
+					"ArtifactDoor",
+					"DoorKey",
+					"MouseHoleDoor",
+					"GoldenMouseHint",
+					"KeyVase",
+					"Pillar2",
+					"Podium",
+					"Vase1",
+					"Vase2",
+					"Waterfall"
+				],
+				"subfolders": [],
+				"name": "Temple MainHub (Temple Enter)"
 			}
 		]
 	},

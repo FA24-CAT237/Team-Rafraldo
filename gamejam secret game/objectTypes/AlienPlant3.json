@@ -1,0 +1,61 @@
+{
+	"name": "AlienPlant3",
+	"plugin-id": "Sprite",
+	"sid": 719246625184807,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 40,
+						"height": 33,
+						"originX": 0.65,
+						"originY": 0.24242424242424243,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1222288,
+						"collisionPoly": {
+							"points": [
+								0.475,
+								0.030303030303030304,
+								0.575,
+								0.030303030303030304,
+								0.925,
+								0.3333333333333333,
+								0.975,
+								0.3939393939393939,
+								0.9499999999999998,
+								0.5454545454545454,
+								0.575,
+								0.9696969696969697,
+								0.375,
+								0.9696969696969697,
+								0.025,
+								0.3939393939393939,
+								0.175,
+								0.18181818181818182
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 296167921046044,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

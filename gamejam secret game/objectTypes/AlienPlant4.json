@@ -1,0 +1,239 @@
+{
+	"name": "AlienPlant4",
+	"plugin-id": "Sprite",
+	"sid": 867611834232488,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 28,
+						"originX": 0.53125,
+						"originY": 0.6071428571428571,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7824893,
+						"collisionPoly": {
+							"points": [
+								0.34375,
+								0.03571428571428571,
+								0.6875,
+								0.07142857142857142,
+								0.875,
+								0.4642857142857143,
+								0.96875,
+								0.8928571428571429,
+								0.75,
+								0.9642857142857143,
+								0.25,
+								0.9642857142857143,
+								0.03125,
+								0.8571428571428571,
+								0.25,
+								0.14285714285714285
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8454839,
+						"collisionPoly": {
+							"points": [
+								0.3125,
+								0,
+								0.84375,
+								0.0625,
+								0.9375,
+								0.28125,
+								0.9375,
+								0.75,
+								0.71875,
+								0.8125,
+								0.21875,
+								0.8125,
+								0,
+								0.71875,
+								0.0625,
+								0.21875,
+								0.09375,
+								0.15625,
+								0.1875,
+								0.0625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2671842,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.03125,
+								0.6875,
+								0.09375,
+								0.90625,
+								0.1875,
+								0.9375,
+								0.75,
+								0.71875,
+								0.8125,
+								0.21875,
+								0.8125,
+								0,
+								0.71875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 97064,
+						"collisionPoly": {
+							"points": [
+								0.40625,
+								0.09375,
+								0.5625,
+								0.09375,
+								0.90625,
+								0.28125,
+								0.9375,
+								0.3125,
+								0.96875,
+								0.4375,
+								0.96875,
+								0.5625,
+								0.9375,
+								0.75,
+								0.71875,
+								0.8125,
+								0.21875,
+								0.8125,
+								0,
+								0.75,
+								0.03125,
+								0.21875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4872423,
+						"collisionPoly": {
+							"points": [
+								0.40625,
+								0.09375,
+								0.5625,
+								0.09375,
+								0.96875,
+								0.46875,
+								0.96875,
+								0.59375,
+								0.9375,
+								0.75,
+								0.71875,
+								0.8125,
+								0.21875,
+								0.8125,
+								0,
+								0.75,
+								0,
+								0.40625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1133101,
+						"collisionPoly": {
+							"points": [
+								0.40625,
+								0.09375,
+								0.5625,
+								0.09375,
+								0.84375,
+								0.375,
+								0.9375,
+								0.75,
+								0.71875,
+								0.8125,
+								0.21875,
+								0.8125,
+								0,
+								0.71875,
+								0.125,
+								0.375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 190432269384404,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,59 @@
+{
+	"name": "TempleStairs2",
+	"plugin-id": "Sprite",
+	"sid": 720006321491300,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 28,
+						"height": 22,
+						"originX": 0.5357142857142857,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 839893,
+						"collisionPoly": {
+							"points": [
+								0.6428571428571429,
+								0.045454545454545456,
+								0.8928571428571429,
+								0.045454545454545456,
+								0.9642857142857143,
+								0.13636363636363635,
+								0.9285714285714286,
+								0.9545454545454546,
+								0.07142857142857142,
+								0.9545454545454546,
+								0.03571428571428571,
+								0.8181818181818182,
+								0.03571428571428571,
+								0.6363636363636364,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 376179345784562,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1210,46 +1210,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "artifact",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 5,
-					"sid": 227862592447963,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 227862592447963,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 777,
-						"y": 232,
-						"width": 103.73375513094548,
-						"height": 95.52227272567832,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "player",
 					"properties": {
 						"initially-visible": true,
@@ -1541,8 +1501,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 920,
-						"y": 435,
+						"x": 367,
+						"y": 455,
 						"width": 55.67067343401744,
 						"height": 36.212962330865714,
 						"originX": 0.5,
@@ -2359,6 +2319,126 @@
 						"height": 554,
 						"originX": 0.49800796812749004,
 						"originY": 2,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bomb_Beetle_Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Right Walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"sid": 577354019860000,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 577354019860000,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3083,
+						"y": 507,
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bomb_Beetle_Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Right Walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 99,
+					"sid": 502391439002537,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 502391439002537,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 537,
+						"y": 342,
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bomb_Beetle_Enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Right Walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 100,
+					"sid": 478337628018688,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 478337628018688,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3242,
+						"y": 220,
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
