@@ -168,7 +168,10 @@
 			"Sprite13",
 			"eyeBullet",
 			"Sprite15",
-			"Sprite16"
+			"Sprite16",
+			"TiledBackground9",
+			"EyeBossPartBG",
+			"TiledBackground10"
 		],
 		"subfolders": [
 			{
