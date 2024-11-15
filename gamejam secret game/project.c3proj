@@ -57,6 +57,27 @@
 		},
 		{
 			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
 			"author": "Scirra",
@@ -171,7 +192,8 @@
 			"Sprite16",
 			"TiledBackground9",
 			"EyeBossPartBG",
-			"TiledBackground10"
+			"TiledBackground10",
+			"Sprite12"
 		],
 		"subfolders": [
 			{
@@ -281,7 +303,8 @@
 			"chopper",
 			"outlook",
 			"temple enter",
-			"eye boss room"
+			"eye boss room",
+			"mousehole"
 		],
 		"subfolders": []
 	},
@@ -294,7 +317,8 @@
 			"chopper sheet",
 			"outlook sheet",
 			"templeEnter sheet",
-			"eye boss room sheet"
+			"eye boss room sheet",
+			"mouseholesheet"
 		],
 		"subfolders": []
 	},

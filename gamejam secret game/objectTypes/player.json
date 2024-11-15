@@ -32,6 +32,11 @@
 			"behaviorId": "destroy",
 			"name": "DestroyOutsideLayout",
 			"sid": 394599755217953
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 348008630492596
 		}
 	],
 	"effectTypes": [
