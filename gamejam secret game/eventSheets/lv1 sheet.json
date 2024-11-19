@@ -605,17 +605,43 @@
 					],
 					"actions": [
 						{
+							"id": "set-double-jump",
+							"objectClass": "player",
+							"sid": 751969813346686,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 941132787339293,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						},
+						{
 							"id": "destroy",
 							"objectClass": "spider",
 							"sid": 390124357657838
 						},
 						{
-							"id": "simulate-control",
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 443782790739511,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-double-jump",
 							"objectClass": "player",
-							"sid": 944873795297068,
+							"sid": 766952730912813,
 							"behaviorType": "Platform",
 							"parameters": {
-								"control": "jump"
+								"state": "disabled"
 							}
 						}
 					],
@@ -748,6 +774,50 @@
 				}
 			],
 			"sid": 234470057169564
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "beetles",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Bomb_Beetle_Enemy",
+							"sid": 261908192062225,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "player",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Bomb_Beetle_Enemy",
+							"sid": 619961191027961,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "player.ImagePointX(0)",
+								"y": "player.ImagePointY(0)"
+							}
+						},
+						{
+							"id": "move-along-path",
+							"objectClass": "Bomb_Beetle_Enemy",
+							"sid": 233199206721158,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 714162553001690
+				}
+			],
+			"sid": 236337183415542
 		}
 	],
 	"sid": 261414330425526

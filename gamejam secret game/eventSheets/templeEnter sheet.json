@@ -9,6 +9,132 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "vine ladder",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "player",
+									"sid": 568064504237391,
+									"parameters": {
+										"object": "VineRope"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 285212817961359,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 134472581841430,
+											"parameters": {
+												"key": 38
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "player",
+											"sid": 522474135425940,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "player",
+											"sid": 869676453721843,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										}
+									],
+									"sid": 648112524391859
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 969622887989451,
+											"parameters": {
+												"key": 40
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "player",
+											"sid": 276434209254215,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "player",
+											"sid": 149061479668767,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										}
+									],
+									"sid": 405131810325001
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 273984430512428
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "player",
+									"sid": 935044058050349,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "player",
+									"sid": 180260142670466,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 928440083036831
+						}
+					],
+					"sid": 353810788211683
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -68,6 +194,15 @@
 							"parameters": {
 								"key": 38
 							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "player",
+							"sid": 433919497663643,
+							"parameters": {
+								"object": "VineRope"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -82,6 +217,106 @@
 						}
 					],
 					"sid": 201619253708327
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 552808246443661,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 791735572733827,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 871244345741150
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 117404910925657,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 373025272813049,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 203480027182503
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 372997435618953,
+							"parameters": {
+								"key": 40
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 346607444116653,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 354947134565791
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 963095360601329,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 726024587139720,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 644273890271664
 				}
 			],
 			"sid": 433155402147051
@@ -435,6 +670,40 @@
 				}
 			],
 			"sid": 123308336137165
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "doors",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 196064751025637,
+							"parameters": {
+								"object": "door2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 242500800326782,
+							"parameters": {
+								"layout": "eye boss room"
+							}
+						}
+					],
+					"sid": 553739106288994
+				}
+			],
+			"sid": 823196140691445
 		}
 	],
 	"sid": 730391375077323

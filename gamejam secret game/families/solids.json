@@ -15,6 +15,13 @@
 		"rightStairs",
 		"leftStairs",
 		"sandBlock",
-		"TempleFloor"
+		"TempleFloor",
+		"TallerTemplePlat",
+		"TempleStairs",
+		"TempleStairs2",
+		"TempleFloor2",
+		"TrapDoor",
+		"BrokenPillarPlatform",
+		"PillarPlatform"
 	]
 }

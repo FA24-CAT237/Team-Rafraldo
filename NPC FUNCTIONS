@@ -1,0 +1,12 @@
+1. Bomb Beetles (Enemy 1)- Explodes when near the player. 
+2. Ghouls (Enemy 2)- Turns invisible and follows players when near. 
+3. Faerie Plant- Warns player when near a fire faerie. 
+4. Faeries (Enemy 3)- Shoots fireballs at players.
+5. Trap Spikes - Faux floor. Detects when player is on it and stabs. 
+6. Trap Door - Faux Floor. Detects when player is on it and opens. 
+7. Spikes - ...Normal Spikes.. 
+8. Golden Mouse- If player follows the mouse, it leads them to the mouse hole.
+9. Wisps- Just floating little guys. 
+10. Hidden Eye Boss (Boss 1)- Shoots lasers. 
+11. Big Worm (Boss 2)- Unbeatable. Follows and tries to touch player. 
+12. Boulder- A Boulder. 

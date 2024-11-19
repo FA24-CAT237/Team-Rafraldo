@@ -50,6 +50,34 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
 			"author": "Scirra",
@@ -59,6 +87,13 @@
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -138,7 +173,27 @@
 			"Sprite6",
 			"Sprite7",
 			"Sprite8",
-			"RubbleFalling"
+			"RubbleFalling",
+			"Sprite9",
+			"Sprite10",
+			"LabCamera",
+			"LabClock",
+			"LabDangerSign",
+			"TiledBackground6",
+			"BrokenPillarPlatform",
+			"PillarPlatform",
+			"Sprite11",
+			"TiledBackground7",
+			"TiledBackground8",
+			"eyeBoss",
+			"Sprite13",
+			"eyeBullet",
+			"Sprite15",
+			"Sprite16",
+			"TiledBackground9",
+			"EyeBossPartBG",
+			"TiledBackground10",
+			"Sprite12"
 		],
 		"subfolders": [
 			{
@@ -247,7 +302,9 @@
 			"lv1",
 			"chopper",
 			"outlook",
-			"temple enter"
+			"temple enter",
+			"eye boss room",
+			"mousehole"
 		],
 		"subfolders": []
 	},
@@ -259,7 +316,9 @@
 			"begining sheet",
 			"chopper sheet",
 			"outlook sheet",
-			"templeEnter sheet"
+			"templeEnter sheet",
+			"eye boss room sheet",
+			"mouseholesheet"
 		],
 		"subfolders": []
 	},
