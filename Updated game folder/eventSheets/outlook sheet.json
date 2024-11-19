@@ -1,0 +1,62 @@
+{
+	"name": "outlook sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 765844499794366
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Helicopter",
+					"sid": 664742306528930,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"landing\"",
+						"property": "position",
+						"end-x": "149",
+						"end-y": "181",
+						"time": "5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 394171397087560
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Helicopter",
+					"sid": 477812165774846,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"landing\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 704429914768064,
+					"parameters": {
+						"layout": "lv1"
+					}
+				}
+			],
+			"sid": 817130065923230
+		}
+	],
+	"sid": 429932691117333
+}

@@ -1,0 +1,57 @@
+{
+	"name": "Pillar2",
+	"plugin-id": "Sprite",
+	"sid": 515143894410057,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 23,
+						"height": 38,
+						"originX": 1.948960302457467,
+						"originY": 0.7640067911714772,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8088561,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.042444821731748725,
+								1,
+								0.042444821731748725,
+								1,
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0.4366729678638941,
+								0.1273344651952462
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 801676055765987,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

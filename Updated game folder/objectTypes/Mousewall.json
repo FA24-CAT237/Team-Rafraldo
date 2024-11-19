@@ -1,0 +1,57 @@
+{
+	"name": "Mousewall",
+	"plugin-id": "Sprite",
+	"sid": 307437352402723,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 47,
+						"height": 34,
+						"originX": 0.425531914893617,
+						"originY": 0.4117647058823529,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9004364,
+						"collisionPoly": {
+							"points": [
+								0.6382978723404253,
+								0.873161764705882,
+								0.9787234042553191,
+								0.8823529411764706,
+								0.9787234042553191,
+								0.9705882352941176,
+								0.02127659574468085,
+								0.9705882352941176,
+								0.02127659574468085,
+								0.8823529411764706,
+								0.08377659574468081,
+								0.8658088235294107,
+								0.1462765957446808,
+								0.8694852941176464
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 274386503782273,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

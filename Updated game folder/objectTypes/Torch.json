@@ -1,0 +1,91 @@
+{
+	"name": "Torch",
+	"plugin-id": "Sprite",
+	"sid": 962393366072126,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 14,
+						"height": 24,
+						"originX": 0.6428571428571429,
+						"originY": 0.7083333333333334,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6767363,
+						"collisionPoly": {
+							"points": [
+								0.35714285714285715,
+								0.041666666666666664,
+								0.6428571428571429,
+								0.08333333333333333,
+								0.9285714285714286,
+								0.2916666666666667,
+								0.6428571428571429,
+								0.9583333333333334,
+								0.35714285714285715,
+								0.9583333333333334,
+								0.07142857142857142,
+								0.2916666666666667,
+								0.21428571428571427,
+								0.08333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 15,
+						"height": 24,
+						"originX": 0.33333333333333337,
+						"originY": 0.7083333333333334,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9468995,
+						"collisionPoly": {
+							"points": [
+								0.7333333333333334,
+								0.08333333333333333,
+								0.9333333333333333,
+								0.20833333333333334,
+								0.6,
+								0.9583333333333334,
+								0.33333333333333337,
+								0.9583333333333334,
+								0.06666666666666665,
+								0.375,
+								0.1333333333333333,
+								0.125,
+								0.4666666666666667,
+								0.041666666666666664,
+								0.6,
+								0.041666666666666664
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 329919203253970,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 1
+			}
+		],
+		"subfolders": []
+	}
+}

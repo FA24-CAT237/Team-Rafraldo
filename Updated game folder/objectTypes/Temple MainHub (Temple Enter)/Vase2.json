@@ -1,0 +1,51 @@
+{
+	"name": "Vase2",
+	"plugin-id": "Sprite",
+	"sid": 760833142976786,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 18,
+						"height": 50,
+						"originX": 0.5277777777777778,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6383315,
+						"collisionPoly": {
+							"points": [
+								0.1111111111111111,
+								0.02,
+								0.8888888888888888,
+								0.04,
+								0.9444444444444444,
+								0.98,
+								0.1111111111111111,
+								0.98
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 125717311709873,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

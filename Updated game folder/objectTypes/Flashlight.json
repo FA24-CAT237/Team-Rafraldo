@@ -1,0 +1,57 @@
+{
+	"name": "Flashlight",
+	"plugin-id": "Sprite",
+	"sid": 294573314297185,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 42,
+						"height": 18,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8308682,
+						"collisionPoly": {
+							"points": [
+								0.023809523809523808,
+								0.05555555555555555,
+								0.9285714285714286,
+								0.2777777777777778,
+								0.9761904761904762,
+								0.3888888888888889,
+								0.9761904761904762,
+								0.6111111111111112,
+								0.9285714285714286,
+								0.722222222222222,
+								0.11904761904761904,
+								0.9444444444444444,
+								0.023809523809523808,
+								0.9444444444444444
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 204150406411218,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

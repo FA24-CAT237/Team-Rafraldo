@@ -1,0 +1,51 @@
+{
+	"name": "LabWindow",
+	"plugin-id": "Sprite",
+	"sid": 395949859189922,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 31,
+						"height": 17,
+						"originX": 0.4838709677419355,
+						"originY": 0.6470588235294118,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 382758,
+						"collisionPoly": {
+							"points": [
+								0.03225806451612903,
+								0.058823529411764705,
+								0.967741935483871,
+								0.058823529411764705,
+								0.967741935483871,
+								0.9411764705882353,
+								0.03225806451612903,
+								0.9411764705882353
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 548821750707565,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

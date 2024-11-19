@@ -1,0 +1,22 @@
+{
+	"name": "labBg",
+	"plugin-id": "TiledBg",
+	"sid": 976587943283288,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 27,
+		"height": 25,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 2698183,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -1,0 +1,81 @@
+{
+	"name": "SideOfTunnel",
+	"plugin-id": "Sprite",
+	"sid": 228780572158337,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 13,
+						"height": 20,
+						"originX": 1.1538461538461537,
+						"originY": 0.55,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8400686,
+						"collisionPoly": {
+							"points": [
+								0.7692307692307693,
+								0.05,
+								0.9230769230769231,
+								0.05,
+								0.9230769230769231,
+								0.95,
+								0.07692307692307693,
+								0.9,
+								0.6923076923076923,
+								0.1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 13,
+						"height": 20,
+						"originX": -0.15384615384615385,
+						"originY": 0.55,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3668529,
+						"collisionPoly": {
+							"points": [
+								0.07692307692307693,
+								0.05,
+								0.23076923076923078,
+								0.05,
+								0.3076923076923077,
+								0.1,
+								0.9230769230769231,
+								0.95,
+								0.07692307692307693,
+								0.95
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 707976705485750,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

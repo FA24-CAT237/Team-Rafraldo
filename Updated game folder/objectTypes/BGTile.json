@@ -1,0 +1,22 @@
+{
+	"name": "BGTile",
+	"plugin-id": "TiledBg",
+	"sid": 343653248110981,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 110,
+		"height": 110,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 9733082,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"name": "Vine2",
+	"plugin-id": "Sprite",
+	"sid": 164740951478907,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 31,
+						"originX": 0.53125,
+						"originY": 0.45161290322580644,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2611737,
+						"collisionPoly": {
+							"points": [
+								0.21875,
+								0.03225806451612903,
+								0.53125,
+								0.12903225806451613,
+								0.84375,
+								0.2903225806451613,
+								0.875,
+								0.3225806451612903,
+								0.96875,
+								0.6774193548387096,
+								0.90625,
+								0.8064516129032258,
+								0.84375,
+								0.9032258064516129,
+								0.71875,
+								0.967741935483871,
+								0.25,
+								0.967741935483871,
+								0.03125,
+								0.7419354838709677,
+								0.03125,
+								0.1935483870967742,
+								0.0625,
+								0.06451612903225806
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 870289473860692,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

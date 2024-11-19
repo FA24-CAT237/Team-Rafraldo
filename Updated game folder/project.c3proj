@@ -1,0 +1,517 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 41600,
+	"name": "Game Jam Secret game",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "tint",
+			"name": "Tint",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "ybh4yi07xay",
+	"objectTypes": {
+		"items": [
+			"SkyBG",
+			"player",
+			"artifact",
+			"Mouse",
+			"Keyboard",
+			"LabFloor",
+			"9patch",
+			"Helicopter",
+			"helopad",
+			"PyramidStill",
+			"SandBG",
+			"Sand2",
+			"hearts1",
+			"hearts2",
+			"hearts3",
+			"hearts4",
+			"hearts5",
+			"boarder",
+			"tracker",
+			"door",
+			"TempleWall2",
+			"TempleWall",
+			"Sprite3",
+			"VineRope",
+			"VineBarrier",
+			"Wisps",
+			"Torch",
+			"AlienPlant2",
+			"AlienPlant3",
+			"AlienPlant4",
+			"door2",
+			"Arrow",
+			"Sprite4",
+			"Sprite5",
+			"Sprite6",
+			"Sprite7",
+			"Sprite8",
+			"RubbleFalling",
+			"fade",
+			"Waterfall2",
+			"LabCamera",
+			"LabClock",
+			"LabDangerSign",
+			"BossBG2",
+			"BrokenPillarPlatform",
+			"PillarPlatform",
+			"Water",
+			"TempleFloor3",
+			"HiddenBossBG3",
+			"eyeBoss",
+			"TunnelBG",
+			"eyeBullet",
+			"Pebbles",
+			"Sprite16",
+			"HiddenBossBG4",
+			"EyeBossPartBG",
+			"BGTile",
+			"Waterfall3",
+			"Cheese",
+			"Mousehole",
+			"Mousewall",
+			"Flashlight",
+			"LabWindow",
+			"LabWarningSIgn",
+			"Vine2",
+			"BirdsFlying",
+			"ShieldPlaceHolder",
+			"ManHung",
+			"Sprite15",
+			"black",
+			"Sprite",
+			"Leaves",
+			"Leaves2",
+			"Sprite2",
+			"Sprite9",
+			"SideOfTunnel",
+			"SideOfTunnel2",
+			"Sprite10",
+			"Sprite11",
+			"Sprite12",
+			"Sprite13",
+			"Sprite14",
+			"Sprite17",
+			"Sprite18",
+			"Sprite19",
+			"Sprite20",
+			"Sprite21",
+			"Sprite22"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"platform1",
+					"TallerTemplePlat",
+					"TempleFloor2",
+					"TempleFloor",
+					"sandBlock",
+					"rightStairs",
+					"leftStairs",
+					"TempleStairs",
+					"TempleStairs2"
+				],
+				"subfolders": [],
+				"name": "plats"
+			},
+			{
+				"items": [
+					"title",
+					"play",
+					"actcontrol",
+					"control",
+					"Text"
+				],
+				"subfolders": [],
+				"name": "text"
+			},
+			{
+				"items": [
+					"controls",
+					"playBotton",
+					"back"
+				],
+				"subfolders": [],
+				"name": "bottons"
+			},
+			{
+				"items": [
+					"beginingDialog",
+					"AlienBabyLab",
+					"CeilingLightLab",
+					"labBg",
+					"LabGarbageBin",
+					"labCapsule"
+				],
+				"subfolders": [],
+				"name": "game dialog"
+			},
+			{
+				"items": [
+					"clouds",
+					"lighterSky"
+				],
+				"subfolders": [],
+				"name": "Level 1"
+			},
+			{
+				"items": [
+					"Bomb_Beetle_Enemy",
+					"spider",
+					"deathSpikes",
+					"TrapDoor",
+					"TrapSpike",
+					"Boulder",
+					"Fireball",
+					"FireFaerie",
+					"Ghouls"
+				],
+				"subfolders": [],
+				"name": "Enemies"
+			},
+			{
+				"items": [
+					"Pillar1",
+					"AlienPlant1",
+					"ArtifactDoor",
+					"DoorKey",
+					"MouseHoleDoor",
+					"GoldenMouseHint",
+					"KeyVase",
+					"Pillar2",
+					"Podium",
+					"Vase1",
+					"Vase2",
+					"Waterfall",
+					"DoorKeyUI"
+				],
+				"subfolders": [],
+				"name": "Temple MainHub (Temple Enter)"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"solids"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"home",
+			"controls",
+			"begining",
+			"lv1",
+			"chopper",
+			"outlook",
+			"temple enter",
+			"eye boss room",
+			"mousehole",
+			"Layout 1"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"lv1 sheet",
+			"home sheet",
+			"controlsheet",
+			"begining sheet",
+			"chopper sheet",
+			"outlook sheet",
+			"templeEnter sheet",
+			"eye boss room sheet",
+			"mouseholesheet",
+			"Event sheet 1"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 645868974176923,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 319039382931782,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 744774915834756,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 497964706877323,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 727013957756777,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 131483190462445,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 504514675223607,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [
+			"Flowchart 1"
+		],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 854,
+	"viewportHeight": 480,
+	"firstLayout": null
+}

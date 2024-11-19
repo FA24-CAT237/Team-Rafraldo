@@ -1,0 +1,57 @@
+{
+	"name": "LabWarningSIgn",
+	"plugin-id": "Sprite",
+	"sid": 584683634908868,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 17,
+						"height": 18,
+						"originX": 0.7647058823529411,
+						"originY": 0.6666666666666666,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5208183,
+						"collisionPoly": {
+							"points": [
+								0.5294117647058824,
+								0.05555555555555555,
+								0.5882352941176471,
+								0.1111111111111111,
+								0.9411764705882353,
+								0.7777777777777778,
+								0.9411764705882353,
+								0.9444444444444444,
+								0.058823529411764705,
+								0.9444444444444444,
+								0.058823529411764705,
+								0.7777777777777778,
+								0.4117647058823529,
+								0.1111111111111111
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 308093839600060,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
