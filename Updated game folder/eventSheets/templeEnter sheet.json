@@ -929,6 +929,274 @@
 				}
 			],
 			"sid": 952437456973805
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 842088978858893,
+					"parameters": {
+						"variable": "hasLight",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-transparent",
+					"objectClass": "System",
+					"sid": 284179332102472,
+					"parameters": {
+						"layer": "3",
+						"mode": "transparent"
+					}
+				}
+			],
+			"sid": 867109437332342
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "trapspike",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "TrapSpike",
+							"sid": 109633511681565,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "player",
+								"image-point": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 357706874741138
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "TrapSpike",
+							"sid": 568051187260602,
+							"parameters": {
+								"animation": "\"Attack\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 260463736740358,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "TrapSpike",
+							"sid": 307842308134775,
+							"parameters": {
+								"animation": "\"down\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 316649791968464,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "TrapSpike",
+							"sid": 974779728890830,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 158542600621155,
+							"parameters": {
+								"seconds": "6"
+							}
+						}
+					],
+					"sid": 263384446853693
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 998082767135020,
+							"parameters": {
+								"object": "TrapSpike"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 594854341924586,
+							"parameters": {
+								"variable": "lifes",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 985025791348440
+				}
+			],
+			"sid": 353422512598325
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ghoul",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 902131306233560
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Ghouls",
+							"sid": 110023689339284,
+							"parameters": {
+								"animation": "\"nothing\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 893277668723605
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Ghouls",
+							"sid": 797963534625672,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "player",
+								"image-point": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 935283081336761
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Ghouls",
+							"sid": 445019787623888,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Ghouls",
+							"sid": 317946595394838,
+							"parameters": {
+								"animation": "\"normal\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 892571814332569
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "player",
+							"sid": 636796413652105,
+							"parameters": {
+								"object": "Ghouls",
+								"offset-x": "0",
+								"offset-y": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Ghouls",
+							"sid": 516574667308276,
+							"parameters": {
+								"animation": "\"dead\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Ghouls",
+							"sid": 655813942575368,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
+						}
+					],
+					"sid": 234487463768041
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Ghouls",
+							"sid": 926926980317214,
+							"parameters": {
+								"animation": "\"dead\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Ghouls",
+							"sid": 622984734270687
+						}
+					],
+					"sid": 460538209728414
+				}
+			],
+			"sid": 387533943545647
 		}
 	],
 	"sid": 730391375077323

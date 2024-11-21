@@ -22,6 +22,8 @@
 		"TempleFloor2",
 		"TrapDoor",
 		"BrokenPillarPlatform",
-		"PillarPlatform"
+		"PillarPlatform",
+		"Pillar2",
+		"Pillar1"
 	]
 }

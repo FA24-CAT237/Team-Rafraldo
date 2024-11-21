@@ -1,5 +1,5 @@
 {
-	"name": "Layout 1",
+	"name": "boss final",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -112,7 +112,7 @@
 					"world": {
 						"x": 381.34931427121387,
 						"y": -81.68537762934906,
-						"width": 51.27680123435535,
+						"width": 51.276801234355354,
 						"height": 59.4810894318522,
 						"originX": 1.84,
 						"originY": -0.13793103448275862,
@@ -450,5 +450,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "bossfinall sheet"
 }

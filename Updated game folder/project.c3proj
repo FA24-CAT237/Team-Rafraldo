@@ -92,6 +92,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Turret",
 			"name": "Turret",
 			"author": "Scirra",
@@ -223,7 +230,8 @@
 			"Sprite19",
 			"Sprite20",
 			"Sprite21",
-			"Sprite22"
+			"Sprite22",
+			"light"
 		],
 		"subfolders": [
 			{
@@ -336,7 +344,7 @@
 			"temple enter",
 			"eye boss room",
 			"mousehole",
-			"Layout 1"
+			"boss final"
 		],
 		"subfolders": []
 	},
@@ -351,7 +359,7 @@
 			"templeEnter sheet",
 			"eye boss room sheet",
 			"mouseholesheet",
-			"Event sheet 1"
+			"bossfinall sheet"
 		],
 		"subfolders": []
 	},
